@@ -12,6 +12,7 @@
     --fs-200: 1rem;
     --fs-300: 1.5rem;
     --fs-400: 2rem;
+    --fs-500: 3.5rem;
 
     --padding-50: .5em;
     --padding-100: 1em;
@@ -251,7 +252,7 @@ button {
     margin-top: calc(var(--padding-500) * 2);
 }
 .main.about h1 {
-    font-size: 3.5rem !important;
+    font-size: var(--fs-500) !important;
     font-weight: 100;
 }
 .main.about p {
@@ -404,7 +405,7 @@ main.booking {
 }
 .booking__rooms {
     display: none;
-    gap: 5em;
+    gap: var(--padding-500);
 }
 .booking__room {
     display: grid;
@@ -422,7 +423,7 @@ main.booking {
     gap: var(--padding-100);
 }
 .booking__room--button {
-    padding: .5em var(--padding-100);
+    padding: var(--padding-50) var(--padding-100);
 }
 .booking__room-bottom {
     display: grid;
@@ -546,10 +547,11 @@ main.booking {
     .booking__forms--button,
     .booking__forms {
         max-width: 50%;
+        padding: var(--padding-50) var(--padding-200);
     }
     .booking__forms {
         margin: 0 auto;
-        place-content: center;
+        justify-items: center;
     }
     .booking__form {
         grid-template-columns: repeat(4, 1fr);
